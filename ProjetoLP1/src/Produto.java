@@ -8,54 +8,71 @@
  *
  * @author maciel
  */
+
+//Esta classe é responsável por todas as informações do produto. 
 public class Produto {
     
-    private int Codigo;
-    private String DataCadastro;
-    private String Descricao;
+    private int codigo;
+    private String nome;
+    private String descricao;
+    private String departamento;
     private float preco;
-    private String numlote;
+    private String fornecedor;
 
     /**
-     * @return the Codigo
+     * @return the codigo
      */
     public int getCodigo() {
-        return Codigo;
+        return codigo;
     }
 
     /**
-     * @param Codigo the Codigo to set
+     * @param codigo the codigo to set
      */
-    public void setCodigo(int Codigo) {
-        this.Codigo = Codigo;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     /**
-     * @return the DataCadastro
+     * @return the nome
      */
-    public String getDataCadastro() {
-        return DataCadastro;
+    public String getNome() {
+        return nome;
     }
 
     /**
-     * @param DataCadastro the DataCadastro to set
+     * @param nome the nome to set
      */
-    public void setDataCadastro(String DataCadastro) {
-        this.DataCadastro = DataCadastro;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     /**
-     * @return the Descricao
+     * @return the descricao
      */
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
     /**
-     * @param Descricao the Descricao to set
+     * @param descricao the descricao to set
      */
-    public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    /**
+     * @return the departamento
+     */
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    /**
+     * @param departamento the departamento to set
+     */
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
     }
 
     /**
@@ -73,16 +90,22 @@ public class Produto {
     }
 
     /**
-     * @return the numlote
+     * @return the fornecedor
      */
-    public String getNumlote() {
-        return numlote;
+    public String getFornecedor() {
+        return fornecedor;
     }
 
     /**
-     * @param numlote the numlote to set
+     * @param fornecedor the fornecedor to set
      */
-    public void setNumlote(String numlote) {
-        this.numlote = numlote;
+    public void setFornecedor(String fornecedor) {
+        this.fornecedor = fornecedor;
     }
+    
+     //verfica se o produto já esta cadastrado
+    public boolean verificaCadastro(){
+        
+    
+    } 
 }
